@@ -1,122 +1,350 @@
-
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
 
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-        <title>Login</title>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-    </head>
-    <body>
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-        <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_hxart9lz.json" background="transparent"  speed="1"  style="width: 1100px; height: 300px;" loop autoplay></lottie-player>
 
-        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <link href="assets/css/style.css" rel="stylesheet">
 
-        <!-- ======= Header ======= -->
-         
 
-        <div class="mb-5">
-            <h3 class="mb-3" style="font-weight: bold; font-size: 36px;">Login</h3>
-            <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" id="nameInp">
-              </div>
-            <input type="password" placeholder="Password" id="passInp" class="form-control">
-            <div class="custom-control custom-switch">
-                <input type="checkbox" class="custom-control-input" id="customSwitch1">
-                <label class="custom-control-label" for="customSwitch1">keep me logged in</label>
-              </div>
-            <button type="text" id="sub_btn" onclick="home()" class="btn w-100 btn-outline-primary mb-3">login</button>
-            <a href="Register.html" class="badge badge-secondary py-1 w-100">Create an account?</a>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="index.html">EvolveLearning</a></h1>
+   
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link   scrollto" href="#Math">Math</a></li>
+          <li><a class="nav-link scrollto" href="Game.html">Game</a></li>
+
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+          <h1>The Future Of Learning</h1>
+          <h2>These is a place for students to practice their math anytime they want</h2>
+          <div class="d-flex justify-content-center justify-content-lg-start">
+            <a href="#about" class="btn-get-started scrollto">Get Started</a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+          <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+  
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>About Us</h2>
         </div>
 
-        >
+        <div class="row content">
+          <div class="col-lg-6">
+            <p>
+              We aim to help students Learn Math in a more fun and exciting way right at the comfort of their homes
+            </p>
+            <ul>
+              <li><i class="ri-check-double-line"></i> We have a easy to use system</li>
+              <li><i class="ri-check-double-line"></i> Fun games to help you understand your subject</li>
+              <li><i class="ri-check-double-line"></i> Helpful notes</li>
+            </ul>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <p>
+               We believe that since technology has grown the way we study math should improve as well so these is a website for students still in primary school who are not very good with math to just practice and acquire some notes if needed
+            </p>
+            <a href="#services" class="btn-learn-more">Learn More</a>
+          </div>
+        </div>
 
+      </div>
+    </section><!-- End About Us Section -->
 
-        <script type="module">
-            // Import the functions you need from the SDKs you need
-            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
-            import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-analytics.js";
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us section-bg">
+      <div class="container-fluid" data-aos="fade-up">
 
-            const firebaseConfig = {
-              apiKey: "AIzaSyC2ZYRaf_cEPn9lfiyIXkiaHdAA5EdSwV0",
-              authDomain: "evolvelearning-8a0ad.firebaseapp.com",
-              databaseURL: "https://evolvelearning-8a0ad-default-rtdb.asia-southeast1.firebasedatabase.app",
-              projectId: "evolvelearning-8a0ad",
-              storageBucket: "evolvelearning-8a0ad.appspot.com",
-              messagingSenderId: "912873552871",
-              appId: "1:912873552871:web:7d439bc89277b540159b42"
-              
-            };
+        <div class="row">
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+
+            <div class="content">
+              <h3> <strong>Why we think online learning is the way to go</strong></h3>
+            </div>
+
+            <div class="accordion-list">
+              <ul>
+                <li>
+                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>01</span> Flexibility <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
+                    <p>
+                      Online learning allows learners to study at their own pace and schedule, making it ideal for those with busy schedules or other commitments.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>02</span>Convenience <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                      Online learning eliminates the need to commute, saving time and money. Learners can access course material from anywhere with an internet connection.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>03</span> Interactive content <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                      Online courses use multimedia elements such as videos, animations, and interactive quizzes to make learning more engaging and effective.
+                    </p>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style='background-image: url("assets/img/why-us.png");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+   
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Services</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <h4><a href="">Games</a></h4>
+              <p>There are games such as a math calculator to practice your math
+              </p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4><a href="">Math</a></h4>
+              <p>We provide notes for popular math problems</p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4><a href="">Practice</a></h4>
+              <p>We have some popular math questions you can try out</p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-layer"></i></div>
+              <h4><a href="">Great Flexibility</a></h4>
+              <p>You can learn at your own pace at your own free time</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+   
+    
+    <!-- ======= Math Section ======= -->
+    <section id="Math" class="Math">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2></h2>
           
-            // Initialize Firebase
-            const app = initializeApp(firebaseConfig);
-            const analytics = getAnalytics(app);
+        </div>
 
-            import { getDatabase, ref, set, child, get, update, remove }
-                from "https://www.gstatic.com/firebasejs/9.17.1/firebase-database.js";
+        <ul id="Math-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+          <li data-filter="*" class="filter-active">All</li>
+          <li data-filter=".filter-multiplication">Multiplcation</li>
+          <li data-filter=".filter-division">Division</li>
+          <li data-filter=".filter-addition_and_subtraction">Addition and Subtraction</li>
+        </ul>
 
-            const db = getDatabase();
+        <div class="row Math-container" data-aos="fade-up" data-aos-delay="200">
 
-            const name = document.getElementById('nameInp');
-            const pass = document.getElementById('passInp');
-            const submit = document.getElementById('sub_btn');
+          <div class="col-lg-4 col-md-6 Math-item filter-multiplication">
+            <div class="Math-img"><img src="assets/img/Math/Multiplication.jpg" class="img-fluid" alt=""></div>
+            <div class="Math-info">
+              <h4>Multiplcation</h4>
+              <p>Click link for more</p>
+              <a href="assets/img/Math/Multiplication.jpg" data-gallery="Math" class="Math-lightbox preview-link" title="Multiplcation-1">
+              <a href="Multiplication.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
 
-            function AuthenticateUser(){
-                const dbRef = ref(db)
-                get(child(dbRef, "Userlist/" + name.value)).then((snapshot) =>{
-                    if(snapshot.exists()){
-                        if(pass.value === snapshot.val().password){
-                            login(snapshot.val());
-                        }
-
-                        else{
-                            alert("Name or password is invalid");
-                        }
-                    }
-                    else{
-                        alert("Name or password is invalid");
-                    }
-
-                });
-            }
-            
-            // does not work for some reason
-            // function decPass(){
-            //     var pass12 = CryptoJS.AES.decrypt(dbpass, pass.value);
-            //     return pass12.toString(CryptoJS.enc.Utf8);
-            // }
-
-            function login(user){
-                let keepLoggedIn = document.getElementById('customSwitch1').checked;
+          <div class="col-lg-4 col-md-6 Math-item filter-division">
+            <div class="Math-img"><img src="assets/img/Math/Division.jpg" class="img-fluid" alt=""></div>
+            <div class="Math-info">
+              <h4>Division</h4>
+              <p>Click link for more</p>
+              <a href="assets/img/Math/Division.jpg" data-gallery="Math" class="Math-lightbox preview-link" title="division-1">
+              <a href="Division.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
 
 
-if (!keepLoggedIn){
-                    sessionStorage.setItem('user', JSON.stringify(user));
-                    window.location = "index.html";
-                }
-                else {
-                    localStorage.setItem('keepLoggedIn', 'yes');
-                    localStorage.setItem('user', JSON.stringify(user));
-                    window.location = "index.html";
-                }
-            }
-            
-            document.getElementById("sub_btn").addEventListener("click", function(e) {
-            e.preventDefault();
-            submit.addEventListener('click',AuthenticateUser())
-            })
-          </script>
+          <div class="col-lg-4 col-md-6 Math-item filter-addition_and_subtraction">
+            <div class="Math-img"><img src="assets/img/Math/Addition and subtraction.jpg" class="img-fluid" alt=""></div>
+            <div class="Math-info">
+              <h4>Addition and Subtraction</h4>
+              <p>Clink link for more</p>
+              <a href="assets/img/Math/Addition and subtraction.jpg" data-gallery="Math" class="Math-lightbox preview-link" title="add_and_subtract-1">
+              <a href="Addition&Subtraction.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
 
+      
 
 
 
         
-    </body>
+
+       
+
+        </div>
+
+      </div>
+    </section><!-- End Math Section -->
+
+   
+   
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Frequently Asked Questions</h2>
+          <p>These are some frequently asked questions by students </p>
+        </div>
+
+        <div class="faq-list">
+          <ul>
+            <li data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Why when i do long division there will be a remainder?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                <p>
+                  Because not all numbers can be equally divided therefore there will be some remainders.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">when rounding off to the nearest tens, do i look at the number after or before the decimal point? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  when rounding off to the nearest tens you look at the second number of the digit for example 1459 will be come 1460
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="300">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">How do i start off sovling guess and check problems? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  You should read the problem carefully and make sure they understand what it is asking for and after that, use the information in the problem to check their guess. If the guess is incorrect, have them make a new guess and repeat the process
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="400">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">Does my final answer have to be in cents or dollars? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  This all depends on the question given however if not stated it usually is dollar
+                </p>
+              </div>
+            </li>
+
+            
+
+          </ul>
+        </div>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+    
+
+  </main><!-- End #main -->
+
+ 
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+
+
+  <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
