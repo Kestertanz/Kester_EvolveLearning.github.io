@@ -1,4 +1,4 @@
-# Kester_EvolveLearning.github.io
+# Kester_EvolveLearning
 
 This project gives Math practice Questions before their exam and lets them have a fun time studying by using our math game 
 
