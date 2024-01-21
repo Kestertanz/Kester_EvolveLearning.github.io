@@ -31,10 +31,4 @@ Another feature that i would like to implement is making class courses for the s
 - [CSS](https://www.w3.org/Style/CSS/Overview.en.html)
     - The project uses **CSS** to to style and layout web pages
     
-## Testing 
-1. Go to Register and register new user 
-2. use new user to login 
-3. Go to Math and click on the links to view the different math pages 
-4. Go to Game to test math game 
 
-https://kestertanz.github.io/Kester_EvolveLearning.github.io/
